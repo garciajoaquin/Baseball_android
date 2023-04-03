@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_field">
+
+    <fragment
+        android:id="@+id/navigation_practice"
+        android:name="com.garciaa.baseball.ui.practice.PracticeFragment"
+        android:label="@string/title_practice"
+        tools:layout="@layout/fragment_practice" />
+
+    <fragment
+        android:id="@+id/navigation_field"
+        android:name="com.garciaa.baseball.ui.field.FieldFragment"
+        android:label="@string/title_field"
+        tools:layout="@layout/fragment_field" />
+
+    <fragment
+        android:id="@+id/navigation_players"
+        android:name="com.garciaa.baseball.ui.players.PlayersFragment"
+        android:label="@string/title_players"
+        tools:layout="@layout/fragment_players" />
+</navigation>
